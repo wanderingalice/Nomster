@@ -1,5 +1,6 @@
 <br />
 <h1 class="pagetitle col-10 offset-1">Nomster by Alice</h1>
+
 <% @places.each do |place| %>
   <div class="places-box col-10 offset-1">
     <h1><%= place.name %></h1>
@@ -8,3 +9,13 @@
   </div>
 
 <% end %>
+<div class="pagetitle col-10 offset-1">
+<div class="digg_pagination">
+    <div class="page_info">
+      <%= page_entries_info @posts %>
+    </div>
+    
+    <%= will_paginate @posts, :container => false %>
+    
+</div>
+</div>

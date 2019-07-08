@@ -71,3 +71,6 @@ source 'https://rails-assets.org' do
 end
 
 gem 'rails_admin', '~> 2.0.0.beta'
+
+gem 'will_paginate'
+gem 'will_paginate-bootstrap' 
