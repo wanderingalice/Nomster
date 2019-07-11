@@ -29,6 +29,7 @@ body {
   -webkit-box-shadow: 0px 5px 6px 4px rgba(0,0,0,0.57);
   -moz-box-shadow: 0px 5px 6px 4px rgba(0,0,0,0.57);
   box-shadow: 0px 5px 6px 4px rgba(0,0,0,0.57);
+  margin-bottom: 25px;
 }
 
 .navbar-inverse .navbar-brand{
@@ -43,6 +44,12 @@ body {
   text-align: center;
   font-family: 'Merienda', cursive;
   }
+
+label {
+  text-align: center;
+  font-family: 'Merienda';
+  margin-right: 10px;
+}
 
 .digg_pagination {
     cursor: default;
@@ -96,9 +103,3 @@ body {
     height: 1%; }
   *:first-child + html .digg_pagination {
     overflow: hidden; }
-
-.centerme {
-  margin-right: 50%;
-  margin-left: 50%;
-  float: center;
-}

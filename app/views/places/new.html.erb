@@ -1,0 +1,14 @@
+<h1 class="pagetitle col-10 offset-1">Enter Your Place Details</h1>
+
+<div class="places-box col-10 offset-1">
+
+<%= simple_form_for @place do |f| %>
+  <%= f.input :name, :label => 'Name:' %>
+  <%= f.input :address, :label => 'Address:' %>
+  <%= f.input :description, :label => "What's it like?" %>
+  <br />
+  <%= f.submit 'Create', class: 'btn btn-primary' %>
+
+<% end %>
+
+</div>
