@@ -136,3 +136,26 @@ label {
   margin-left: auto;
   margin-right: auto;
   }
+
+  blockquote {
+  border-left: 10px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;;
+  border-bottom: 1px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: rgba(179, 207, 255, 0.7);
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+}
+
+blockquote p {
+  display: inline;
+}
+
+.row{
+  margin: -5px;
+}
