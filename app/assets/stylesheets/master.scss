@@ -121,13 +121,17 @@ label {
     clear: both;
   }
 
+  .modal-content{
+  text-align: center;
+  }
+
   .commentbox{
-    display: block;
-    text-align: center;
+  text-align: center;
+  display: block;
   }
 
   #comment_message{
-  width: 50%;
+  width: 70%;
   display: block;
   margin-left: auto;
   margin-right: auto;
