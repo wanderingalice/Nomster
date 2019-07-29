@@ -1,1 +1,7 @@
-<h1>User Dashboard</h1>
+<h1 class="pagetitle col-10 offset-1"><%= @user.email %></h1>
+<hr />
+<h4 class="subtitle col-10 offset-1">
+  Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h4>
+<br />
+<h5 class="subtitle col-10 offset-1"><%= @user.comments.count %> total comments</h5>
+<h5 class="subtitle col-10 offset-1"><%= @user.comments.where(rating: '5_stars').count %> 5 star reviews</h5>
