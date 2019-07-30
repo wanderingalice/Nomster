@@ -1,7 +1,19 @@
-<h1 class="pagetitle col-10 offset-1"><%= @user.email %></h1>
-<hr />
-<h4 class="subtitle col-10 offset-1">
-  Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h4>
-<br />
-<h5 class="subtitle col-10 offset-1"><%= @user.comments.count %> total comments</h5>
-<h5 class="subtitle col-10 offset-1"><%= @user.comments.where(rating: '5_stars').count %> 5 star reviews</h5>
+<div class="containter stats-box col-10 offset-1">
+  <div class="row">
+    <div class="userheader col-4">
+      <%= image_tag 'user.png', class:"userimage" %>
+      <h3 class="pagetitle"><%= @user.email %></h3>
+    </div>
+
+    <div class="userstats col-8">
+      <h5 class="subtitle">
+        Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h5>
+      <hr />
+      <div class="containter">
+          <h6 class="subtitle"><%= @user.comments.count %> &nbsp total comments &nbsp &nbsp | &nbsp &nbsp
+          <%= @user.comments.where(rating: '5_stars').count %> &nbsp 5 star reviews</h6>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
