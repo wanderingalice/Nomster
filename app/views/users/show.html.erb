@@ -17,3 +17,26 @@
   </div>
   <div class="clear"></div>
 </div>
+<hr />
+<br />
+
+
+<div class="usercomments">
+  <h1 class="text-center">My Comments</h1>
+  <br />
+  <div class="containter">
+    <div class="row">
+      <% @user.comments.each do |comment| %>
+      <div class="col-12 col-sm-6">
+        <blockquote class="commentbox">
+          <h2 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h2>
+          <b><%= comment.humanized_rating %></b> &nbsp; - &nbsp; &nbsp;
+              <%= comment.message %> 
+              <br />
+          -- &nbsp; <small><%= comment.user.email %></small>
+        </blockquote>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
